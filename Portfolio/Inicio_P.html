@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Pol Maresch </title>
+    <link rel="stylesheet" href="CSS/general-style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <link rel="stylesheet" href="CSS/init.css">
+    <!--<div id="header"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("header.html")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => document.getElementById('header').innerHTML = data)
+                .catch(error => console.error('Error al cargar el encabezado:', error));
+        });
+    </script>-->
+    <header >
+        <div class="header-class">
+            <div class="name" style="width: 500px;">
+                <h1>
+                    Pol Maresch
+                </h1>
+                <h3 style="color: gray; font-family: Rubik; font-size: 22px;"> Game Developer </h3>
+            </div>
+            <div class="icons" style="width: 500px;">
+                <img src="Images/Logos/GitHub_Logo.png" class="social-image" onclick="Github_link()">
+                <img src="Images/Logos/Linkedin_Logo.png" class="social-image" onclick="Linkedin_link()">
+                <img src="Images/Logos/Mail.png" class="social-image" onclick="Mail_link()">
+                <img src="Images/Logos/CV.png" class="social-image" onclick="DownloadCV()">
+            </div>
+        </div>
+        <div class="section-buttons">
+            <a href="#all-projects" class="b-section"  >
+                Projects
+            </a>
+            <a href="#experience" class="b-section"  >
+                Experience
+            </a >
+            <a href="#skills" class="b-section"  >
+                Skills
+            </a>
+            <a href="#about-me" class="b-section"  >
+                About Me
+            </a>
+        </div>
+    </header>
+    <!-- BODY -->
+
+    <!-- All projects -->
+    <div class="containers">
+        <h1 class="title" id="all-projects">
+            <strong> PROJECTS </strong>
+        </h1>
+        <div class="images-container">
+            <div class="image-wrapper">
+                <a href="works.html#salt-Peter">
+                    <img src="Images/Projects/Salt-Peter.png" class="project-image">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+
+
+
+            <div class="image-wrapper">
+                <a href="works.html#tFG">
+                    <img src="Images/Projects/TFG.gif" class="project-image">
+                    <div class="overlay">
+                        <p>TFG: High Dimensions Game</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="image-wrapper">
+                <a href="works.html#tED">
+                    <img src="Images/Projects/Ted-is-out-of-bed.png" class="project-image">
+                    <div class="overlay">
+
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="images-container">
+            <div class="image-wrapper">
+                <a href="works.html#proj3">
+                    <img src="Images/Projects/Proj3_Logo.png" class="project-image">
+                    <div class="overlay">
+                        <p>Guardins Of The Galaxy: The Bet</p>
+                    </div>
+                </a>
+            </div>
+            <div class="image-wrapper">
+                <a href="works.html#lstMelody">
+
+                    <img src="Images/Projects/Lost_Melody.png" class="project-image">
+                    <div class="overlay">
+
+                    </div>
+                </a>
+            </div>
+            <div class="image-wrapper">
+                <a href="works.html#a-Engine">
+                    <img src="Images/Projects/Alporo_Engine.png" class="project-image">
+                    <div class="overlay">
+                        <p>Alporo Engine</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="images-container">
+            <div class="image-wrapper">
+                <a href="works.html#pingGame">
+                    <img src="Images/Projects/Pingun-Game.png" class="project-image">
+                    <div class="overlay">
+
+                    </div>
+                </a>
+            </div>
+            <div class="image-wrapper">
+                <a href="works.html#proj2">
+                    <img src="Images/Projects/Proj2.png" class="project-image">
+                    <div class="overlay">
+                        <p>Blood War</p>
+                    </div>
+                </a>
+            </div>
+            <div class="image-wrapper">
+                <a href="works.html#mbl">
+                    <img src="Images/Projects/Mobile_p2.png" class="project-image">
+                    <div class="overlay">
+                        <p>Mobile Book Library</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="images-container">
+            <div class="image-wrapper">
+                <a href="works.html#car3D">
+                    <img src="Images/Projects/Racing_Car.png" class="project-image">
+                    <div class="overlay">
+                        <p>Car 3D</p>
+                    </div>
+                </a>
+            </div>
+            <div class="image-wrapper">
+                <a href="works.html#phys2D">
+                    <img src="Images/Projects/Worms.png" class="project-image">
+                    <div class="overlay">
+                        <p>Physics 2D</p>
+                    </div>
+                </a>
+            </div>
+            <div class="image-wrapper">
+                <a href="works.html#PintBall">
+                    <img src="Images/Projects/Pintball.png" class="project-image">
+                    <div class="overlay">
+                        <p>Pintball</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Work Experience -->
+    <div class="containers">
+        <h1 class="title" id="experience">
+            <strong> EXPERIENCE </strong>
+        </h1>
+
+        <div class="info-container">
+            <ul>
+                <li class="list">Project for CUPRA (SEAT) “CUPRA GAMIFIED CAR” </li>
+                <ul>
+                    <li>– September (2023) – January (2024)</li>
+                </ul>
+                <li class="list">Codelearn</li>
+                <ul>
+                    <li>– Programming Tutor – (june 2024 – july 2024)</li>
+                    <li>– Programming Tutor – (june 2023 – july 2023)</li>
+                </ul>
+            </ul>
+            <div class="UPC">
+                <img src="Images/Altres/UPC.png" class="altres-image">
+                <div>
+                    <p>Bachelor in Video Game Design and Development</p>
+                    <p>Polytechnic University of Catalonia</p>
+                    <p>(Sep 2020 - jul 2024)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SKILLS -->
+    <div class="containers" id="skills">
+        <!-- Programming -->
+        <div class="skills-container">
+            <h1 class="title" style="height: 150px; align-items: center;">
+                <strong> PROGRAMMING LENGUAGES </strong>
+            </h1>
+            <div class="images-container">
+                <img src="Images/Altres/CS.png" class="altres-image">
+                <img src="Images/Altres/Flutter.png" class="altres-image">
+            </div>
+        </div>
+        <!-- TOOLS -->
+        <div class="skills-container">
+            <h1 class="title" style="height: 150px; align-items: center;">
+                <strong> TOOLS</strong>
+            </h1>
+            <div class="images-container">
+                <img src="Images/Altres/Unity.png" class="altres-image">
+                <img src="Images/Altres/phs.png" class="altres-image">
+            </div>
+            <div class="images-container">
+                <img src="Images/Altres/Vs.png" class="altres-image">
+                <img src="Images/Altres/VsC.png" class="altres-image">
+            </div>
+        </div>
+        <!-- LIBRARIES -->
+        <div class="skills-container">
+            <h1 class="title" style="height: 150px; align-items: center;">
+                <strong> LIBRARIES</strong>
+            </h1>
+            <div class="images-container">
+                <img src="Images/Altres/Opengl.png" id="Opengl" style="align-items: center;">
+
+            </div>
+            <div class="images-container">
+                <img src="Images/Altres/SDL.png" width="300px" style="align-items: center;">
+
+            </div>
+        </div>
+
+    </div>
+    <!-- ABOUT ME -->
+    <div class="containers">
+        <h1 class="title" id="about-me">
+            <strong> ABOUT ME </strong>
+
+        </h1>
+        <div class="about-me">
+            <img src="Images/Me/pol_maresch.png" width="500 px" height="500 px">
+            <div>
+                <p>HI! Im Pol Maresch Marxuach</p>
+                <div>
+                    <p> Graduated from the Video Game Development program at the Universitat Politècnica de
+                        Catalunya – Terrassa (CITM).
+                        I am a software developer primarily focused on game development. Passionate about video
+                        games
+                        since childhood, this sparked a great
+                        curiosity in me for creating games, to the point of pursuing and completing a career in this
+                        field. Now that I have finished it,
+                        I can say that what I enjoy the most in game development is programming.</p>
+
+                    <p> I am a communicative and dependable individual in the workplace. I thrive in team
+                        environments
+                        and actively seek opportunities to enhance my programming skills by learning from my
+                        surroundings. My primary programming languages are C++ and C#, and I also possess
+                        proficiency in
+                        several other languages.</p>
+
+                    <p>You can see all my projects here ⭡</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACTE ME -->
+    <footer>
+        <div class="containers">
+            <h1 class="containers">CONTACT</h1>
+            <div class="icons" id="h-containers">
+                <img src="Images/Logos/GitHub_Logo.png" class="social-image" onclick="Github_link()">
+                <img src="Images/Logos/Linkedin_Logo.png" class="social-image" onclick="Linkedin_link()">
+                <img src="Images/Logos/Mail.png" class="social-image" onclick="Mail_link()">
+                <img src="Images/Logos/CV.png" class="social-image" onclick="DownloadCV()">
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+</html>
+
+<script>
+    function Github_link() { window.open("https://github.com/rayolop20"); }
+    function Linkedin_link() { window.open("https://www.linkedin.com/in/pol-maresch-marxuach-1855a9264/") };
+    function Mail_link() { window.open("https://www.linkedin.com/in/pol-maresch-marxuach-1855a9264/") };
+    function DownloadCV() { window.open("CV/Pol_Maresch_Marxuach_CV_English.pdf") };
+</script>

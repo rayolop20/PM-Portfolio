@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'D-DINExp';
+    src: url(../Fonts/D-DINExp.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(../Fonts/Rubik.ttf);
+    font-weight: bold;
+}
+
+body {
+    /*background-color: #111111;*/
+    background-image: url(../Images/BackGround/fondo.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    color: #fff;
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'D-DINExp';
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 46px;
+    font-family: 'Rubik';
+    font-weight: bold !important;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: 'Rubik';
+    font-weight: bold !important;
+}
+
+
+.header-class {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.section-buttons {
+    display: flex;
+    justify-content: center;
+
+    gap: 3%;
+
+}
+
+.b-section {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    border-radius: 70px;
+    font-family: 'D-DINExp';
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(48, 47, 47);
+    border: none;
+    transition: transform 0.3s ease;
+    justify-content: center;
+    align-items: center;  
+    text-decoration: none ;
+}
+
+.b-section:hover {
+    cursor: pointer;
+    background-color: gray;
+    transform: scale(1.05);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+
+
+.social-image {
+    width: 54px;
+    object-fit: cover;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-image:hover {
+    transform: scale(1.1);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/*---------------------------------BODY--------------------------------*/
+
+.containers {
+    margin-bottom: 5%;
+}

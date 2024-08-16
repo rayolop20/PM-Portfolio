@@ -1,0 +1,49 @@
+
+
+.aprj-containers{
+    display:grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.role{
+    display:flex;
+    justify-content: space-between;
+    justify-items: center;
+    gap: 5%;
+    align-items: center;
+    list-style: none;
+    outline: white;
+    margin-bottom: 10%;
+}
+
+.w-Images{
+    width: 500px;
+    height: 350px;
+    margin-bottom: 1%;
+    object-fit: cover;
+ 
+}
+
+.w-icons{
+    display: flex;
+    gap: 5%;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50px;
+    width: 200px;
+    height: 70px;
+    transition: transform 0.3s ease;
+    
+}
+
+.w-icons:hover{
+    cursor: pointer;
+    background-color: gray;
+    transform: scale(1.05);
+}
