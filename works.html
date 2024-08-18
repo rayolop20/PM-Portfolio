@@ -4,10 +4,52 @@
 <head>
     <title> Pol Maresch </title>
     <link rel="stylesheet" href="CSS/general-style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Cargar el header
+            fetch("header.html")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => document.getElementById('header').innerHTML = data)
+                .catch(error => console.error('Error al cargar el encabezado:', error));
+
+            // Cargar el footer
+            fetch("footer.html")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => document.getElementById('footer').innerHTML = data)
+                .catch(error => console.error('Error al cargar el footer:', error));
+        });
+    </script>
 </head>
 
 <body>
     <link rel="stylesheet" href="CSS/works.css">
+    <header>
+        <div id="header"></div>
+        <div class="section-buttons">
+            <a href="index.html#all-projects" class="b-section"  >
+                Projects
+            </a>
+            <a href="index.html#experience" class="b-section"  >
+                Experience
+            </a >
+            <a href="index.html#skills" class="b-section"  >
+                Skills
+            </a>
+            <a href="index.html#about-me" class="b-section"  >
+                About Me
+            </a>
+        </div>
+    </header>
     <!--SALTPETER-->
     <div id="salt-Peter">
         <h2>Salt-Peter and the Philosopher's Stone</h2>
@@ -87,7 +129,7 @@
                 </div>
                 <div>
 
-                    <div class="icon-containers" onclick="SaltPeter()">
+                    <div class="icon-containers" onclick="TFG()">
                         <div class="w-icons">
                             <img src="Images/Logos/G_Logo.png" width="50 px" height="50px">
                             <p>Repository</p>
@@ -484,6 +526,7 @@
             </div>
         </div>
     </div>
+    <div id="footer"></div>
 </body>
 
 </html>
@@ -499,6 +542,6 @@
     function LstMelody() { window.open("https://adria-sellares.itch.io/lost-melody"); }
     function Prj3() { window.open("https://projectwastelanders.github.io/ProjectWastelanders/game.html"); }
     function Ted() { window.open("https://mrillas.itch.io/ted-is-out-of-bed"); }
-    function SaltPeter() { window.open("https://github.com/rayolop20/TFG-Dimensions"); }
+    function TFG() { window.open("https://github.com/rayolop20/TFG-Dimensions"); }
     function SaltPeter() { window.open("https://xarderos.itch.io/salt-peter"); }
 </script>

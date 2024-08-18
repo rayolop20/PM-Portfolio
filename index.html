@@ -4,14 +4,10 @@
 <head>
     <title> Pol Maresch </title>
     <link rel="stylesheet" href="CSS/general-style.css">
-</head>
-
-<body>
-    <!-- Header -->
     <link rel="stylesheet" href="CSS/init.css">
-    <!--<div id="header"></div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+       document.addEventListener("DOMContentLoaded", function() {
+            // Cargar el header
             fetch("header.html")
                 .then(response => {
                     if (!response.ok) {
@@ -21,23 +17,25 @@
                 })
                 .then(data => document.getElementById('header').innerHTML = data)
                 .catch(error => console.error('Error al cargar el encabezado:', error));
+
+            // Cargar el footer
+            fetch("footer.html")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => document.getElementById('footer').innerHTML = data)
+                .catch(error => console.error('Error al cargar el footer:', error));
         });
-    </script>-->
-    <header >
-        <div class="header-class">
-            <div class="name" style="width: 500px;">
-                <h1>
-                    Pol Maresch
-                </h1>
-                <h3 style="color: gray; font-family: Rubik; font-size: 22px;"> Game Developer </h3>
-            </div>
-            <div class="icons" style="width: 500px;">
-                <img src="Images/Logos/G_Logo.png" class="social-image" onclick="Github_link()">
-                <img src="Images/Logos/Linkedin_Logo.png" class="social-image" onclick="Linkedin_link()">
-                <img src="Images/Logos/Mail.png" class="social-image" onclick="Mail_link()">
-                <img src="Images/Logos/CV.png" class="social-image" onclick="DownloadCV()">
-            </div>
-        </div>
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div id="header"></div>
         <div class="section-buttons">
             <a href="#all-projects" class="b-section"  >
                 Projects
@@ -268,24 +266,15 @@
                         proficiency in
                         several other languages.</p>
 
-                    <p>You can see all my projects here ⭡</p>
+                    <p>You can see all my projects <a href="index.html#all-projects" style="color: white;">here</a>  ⭡</p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- CONTACTE ME -->
-    <footer>
-        <div class="containers">
-            <h1 class="containers">CONTACT</h1>
-            <div class="icons" style="display: flex; gap: 20%;">
-                <img src="Images/Logos/G_Logo.png" class="social-image" onclick="Github_link()">
-                <img src="Images/Logos/Linkedin_Logo.png" class="social-image" onclick="Linkedin_link()">
-                <img src="Images/Logos/Mail.png" class="social-image" onclick="Mail_link()">
-                <img src="Images/Logos/CV.png" class="social-image" onclick="DownloadCV()">
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
+
 </body>
 </html>
 
